@@ -9,19 +9,24 @@ function ( flurry, props) {
 
  			var color = layout.props.myColor.color;
  			var character = layout.props.mySymbol;
+            var outsideInside = layout.props.outsideInside;
+            var inside = 'body', outside = '.qv-object-content-container';
+            var whereToSnow = outsideInside? inside: outside;
 
  			//To reset the effect
-			if (typeof $('body').flurry() === "object")
-				$('body').flurry('destroy');
+			if (typeof $(inside).flurry() === "object")
+				$(inside).flurry('destroy');
+			if (typeof $(outside).flurry() === "object")
+				$(outside).flurry('destroy');
 
-			$('body').flurry({
+            var flurryOptions = {
 				character: character, 
 				color:  color,
 				frequency: 100,
 				height: 600,
 				speed: 3000,
-				small: 28,
-				large: 68,
+				small: 8,
+				large: 48,
 				wind: 40,
 				windVariance: 20,
 				rotation: 90,
@@ -32,8 +37,12 @@ function ( flurry, props) {
 				blur: true,
 				overflow: "hidden",
 				zIndex: 9999
-			}
-			);
+			};
+            
+			//$('.qv-chart-scrollable').flurry(flurryOptions);
+            $( document ).ready(function() {
+			     $(whereToSnow).flurry(flurryOptions);
+            });
 		}
 	};
 
