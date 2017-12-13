@@ -1,0 +1,16 @@
+{
+	"name": "snowEffect",
+	"description": "Falling snow effect",
+	"type": "visualization",
+	"version": "1.0.0",
+	"icon": "extension",
+	"preview" : "icon.png",
+	"author": "Héctor Muñoz",
+	"homepage": "",
+	"keywords": "qlik-sense, visualization",
+	"license": "MIT",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}
