@@ -11,15 +11,18 @@ define([], function () {
         ref: "props.mySymbol",
         label: "Symbol",
         type: "string",
-        defaultValue: "❄❅❆"
+        defaultValue: "❄❅❆$€£"
     };
 
     var myColor = {
         label: "Color",
         component: "color-picker",
         ref: "props.myColor",
-        type: "string",
-        defaultValue: "#ffffff"
+        type: "object",
+        dualOutput : true,
+        defaultValue: {
+            color: "#ffffff"
+        }
     };
 
     var outsideInside = {
