@@ -13,7 +13,7 @@ then add the extension to the document (QS Desktop or browser)
 
 You can define the characters and the color of the snowflakes (Actually it works with any character, try to put ❤)
 
-You can also switch to let it snow inside!
+You can also switch to let it snow inside! **(Thanks Ralph Becher)**
 
 ![inside snow](insideSnow.gif)
 
